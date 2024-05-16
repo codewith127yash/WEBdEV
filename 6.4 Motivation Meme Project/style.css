@@ -1,0 +1,14 @@
+* {
+  background-color: black;
+}
+.border {
+  border: 3px solid white;
+  margin-top:250px;
+}
+.design {
+  font-family: "Caveat", cursive;
+  font-family: "Libre Baskerville", serif;
+  color: white;
+  text-align: center;
+  margin-top:-100px;
+}
