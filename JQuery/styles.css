@@ -1,0 +1,10 @@
+body
+{
+    background-color: grey;
+}
+.big-title
+{
+    font-size: 5rem;
+    color: yellow;
+    font-family: cursive;
+}
