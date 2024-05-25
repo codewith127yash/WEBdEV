@@ -1,0 +1,248 @@
+body {
+    font-family: cursive;
+    margin: 0;
+    padding: 0;
+    background-image: url("./images/back.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; /* Keeps the background fixed on scroll */
+    color: #fff;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .header {
+    text-align: center;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for readability */
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+  }
+  
+  .header h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #f0f0f0;
+  }
+  
+  .header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+    animation: slideIn 1s forwards;
+  }
+  
+  .header p {
+    font-size: 1rem;
+    line-height: 1.5;
+    animation: fadeIn 1.5s forwards;
+  }
+  
+  .about {
+    padding: 50px 0;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for readability */
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+  }
+  
+  .about h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  .about h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .about-image {
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .profile-pic:hover {
+    transform: scale(1.1);
+  }
+  
+  .skills {
+    margin-top: 40px;
+    text-align: left;
+  }
+  
+  .skills h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .skills ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+  
+  .skills li {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  }
+  
+  .skills li:hover {
+    transform: scale(1.1);
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  .projects {
+    padding: 50px 0;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for readability */
+    opacity: 0;
+    animation: fadeIn 2.5s forwards;
+  }
+  
+  .projects h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  .projects p {
+    margin-bottom: 30px;
+  }
+  
+  .project-item {
+    margin-bottom: 30px;
+  }
+  
+  .project-item img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .project-item img:hover {
+    transform: scale(1.1);
+  }
+  
+  .contact {
+    text-align: center;
+    margin: 2rem 0;
+    padding: 50px 0;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for readability */
+    opacity: 0;
+    animation: fadeIn 3s forwards;
+  }
+  
+  .contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  .resume a {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .resume a:hover {
+    background-color: #0069d9;
+  }
+  
+  .contact ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .contact li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+  }
+  
+  .contact li:last-child {
+    margin-bottom: 0;
+  }
+  
+  .contact li a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .contact li a:hover {
+    color: #007bff;
+  }
+  
+  .footer {
+    border-top: 1px solid #ddd;
+    padding: 20px 0;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(-20px);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .header h1 {
+      font-size: 1.5rem;
+    }
+  
+    .about h1 {
+      font-size: 2rem;
+    }
+  
+    .about h2 {
+      font-size: 1.5rem;
+    }
+  
+    .projects h2,
+    .contact h2 {
+      font-size: 2rem;
+    }
+  }
+
+  .contact a {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    margin: 5px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .contact a:hover {
+    background-color: #0069d9;
+  }
+  
